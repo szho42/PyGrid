@@ -1,4 +1,5 @@
 class MSG_FIELD:
+    REQUEST_ID = "request_id"
     TYPE = "type"
     DATA = "data"
     WORKER_ID = "worker_id"
@@ -44,6 +45,22 @@ class USER_EVENTS(object):
     DELETE_USER = "delete-user"
     SIGNUP_USER = "signup-user"
     LOGIN_USER = "login-user"
+
+
+class ROLE_EVENTS(object):
+    CREATE_ROLE = "create-role"
+    GET_ROLE = "get-role"
+    GET_ALL_ROLES = "get-all-roles"
+    PUT_ROLE = "put-role"
+    DELETE_ROLE = "delete-role"
+
+
+class GROUP_EVENTS(object):
+    CREATE_GROUP = "create-group"
+    GET_GROUP = "get-group"
+    GET_ALL_GROUPS = "get-all-groups"
+    PUT_GROUP = "put-group"
+    DELETE_GROUP = "delete-group"
 
 
 class CYCLE(object):
